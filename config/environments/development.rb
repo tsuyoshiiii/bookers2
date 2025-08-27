@@ -77,4 +77,14 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   Rails.application.config.hosts.clear
 
+const webpack = require('webpack')
+environment.plugins.prepend(
+  'Provide',
+  new webpack.ProvidePlugin({
+    $: 'jquery/src/jquery',
+    jQuery: 'jquery/src/jquery',
+    Popper: 'popper.js'
+  })
+)
+
 end
