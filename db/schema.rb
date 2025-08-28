@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2025_08_27_234915) do
   create_table "books", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
+    t.integer "user_id" #カラム追加
   end
 
   create_table "users", force: :cascade do |t|
