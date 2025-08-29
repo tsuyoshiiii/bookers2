@@ -1,17 +1,5 @@
 <%= render 'show', users: @users %>
-
-<h1>New Book</h1>
-<%= form_with(model:Book.new) do |f| %>
-  <h4>Title</h4>
-    <%= f.text_field :title %>
-	
-  <h4>Opinion</h4>
-    <%= f.text_area :body %>
-	
-  <div>
-    <%= f.submit 'Create Book' %>
-  </div>
-<% end %>
+<%= render 'books/new', books: @books %>
 
 <h1>Books</h1>
 <table>
