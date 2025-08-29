@@ -1,23 +1,18 @@
-<h1>User Info</h1>
+<h1>User info</h1>
 <% if @user.profile_image.attached? %>
-    <%= image_tag @user.image, size: "100x100" %>
+    <%= image_tag url_for(@user.profile_image), size: "100x100" %>
   <% else %>
     <%= image_tag 'default-image', size: "100x100" %>
   <% end %>
 
 
-  <table>
+<table>
   <tbody>
     <tr>
-
-      <div>
-      <tr>name: <%= @user.name %></tr>
-      </div>
-
-      <div>
-      <tr>introduction: <%= @user.introduction %></tr>
-      </div>
-
+      <td>
+        <div>name: <%= @user.name %></div>
+        <div>introduction: <%= @user.introduction %></div>
+      </td>
     </tr>
   </tbody>
 </table> 
@@ -26,16 +21,47 @@
   <%= link_to "絵文字", edit_user_path(current_user) %>
 </div>
 
-
-<h1>New book</h1>
-
-<%= form_with model: @book do |f| %>
+<h1>New Book</h1>
+<%= form_with(model:Book.new) do |f| %>
   <h4>Title</h4>
-  <%= f.text_field :title %>
+    <%= f.text_field :title %>
 	
   <h4>Opinion</h4>
-  <%= f.text_area :body %>
+    <%= f.text_area :body %>
+	
   <div>
     <%= f.submit 'Create Book' %>
   </div>
 <% end %>
+
+<h1>Books</h1>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Title:</th>    
+      <th>Opinion:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div>
+          
+        </div>
+      </td>
+      <td>
+        <div>
+          
+        </div>
+      </td>
+      <td>
+        <div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table> 
+
+
+
