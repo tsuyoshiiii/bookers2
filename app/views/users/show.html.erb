@@ -1,25 +1,4 @@
-<h1>User info</h1>
-<% if @user.profile_image.attached? %>
-    <%= image_tag url_for(@user.profile_image), size: "100x100" %>
-  <% else %>
-    <%= image_tag 'default-image', size: "100x100" %>
-  <% end %>
-
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <div>name: <%= @user.name %></div>
-        <div>introduction: <%= @user.introduction %></div>
-      </td>
-    </tr>
-  </tbody>
-</table> 
-
-<div>
-  <%= link_to "絵文字", edit_user_path(current_user) %>
-</div>
+<%= render 'show', users: @users %>
 
 <h1>New Book</h1>
 <%= form_with(model:Book.new) do |f| %>
