@@ -3,4 +3,7 @@ class Book < ApplicationRecord
   belongs_to :user
   attribute :title, :string
   attribute :body, :text
+
+  validates :title, presence: true
+  validates :body, presence: true
 end
