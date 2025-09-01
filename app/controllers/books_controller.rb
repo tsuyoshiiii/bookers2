@@ -18,11 +18,13 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @user = @book.user
     render 'show', locals: { book: @book, user: @user }
+    @user = User.new
   end
 
   def index
     @books = Book.all
     @book = Book.new
+    @user = User.new
   end
 
   def edit
