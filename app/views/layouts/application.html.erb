@@ -56,25 +56,29 @@
                 <% else %>
                   <a>
                     <%= link_to root_path, class: "nav-link text-light" do %>
+                      <i class="fa-solid fa-home"></i>
                       <span>Home</span>
                     <% end %> 
                   </a>
 
                   <a>
                     <%= link_to about_path, class: "nav-link text-light" do %>
+                      <i class="fa-solid fa-link"></i>
                       <span>About</span>
+                    <% end %>
+                  </a>
+
+                  <a>
+                    <%= link_to new_user_registration_path, class: "nav-link text-light" do %>
+                      <i class="fa-solid fa-user-plus"></i>
+                      <span>Sign up</span>
                     <% end %> 
                   </a>
 
                   <a>
                     <%= link_to new_user_session_path, class: "nav-link text-light" do %>
+                      <i class="fa-solid fa-sign-in-alt"></i>
                       <span>Log in</span>
-                    <% end %> 
-                  </a>
-
-                  <a>
-                    <%= link_to new_user_registration_path, class: "nav-link text-light" do %>
-                      <span>Sign up</span>
                     <% end %> 
                   </a>
                 <% end %>
