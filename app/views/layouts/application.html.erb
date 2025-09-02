@@ -14,38 +14,76 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
-        <li>
-          <%= link_to "Bookers", root_path %> 
-        </li>
-        <li>
-          <%= link_to "Home", user_path(current_user) %> 
-        </li>
-        <li>
-          <%= link_to "Users", "/users" %> 
-        </li>
-        <li>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-        </li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a>
+              <%= link_to root_path, class: "navbar-brand" do %>
+                <span>Bookers</span>
+              <% end %> 
+            </a>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <% if user_signed_in? %>
+                  <a>
+                    <%= link_to user_path(current_user), class: "nav-link text-light" do %>
+                    <i class="fa-solid fa-home"></i>
+                      <span>Home</span>
+                    <% end %> 
+                  </a>
 
-      <% else %>
-        <li>
-          <%= link_to "Bookers", root_path %> 
-        </li>
-        <li>
-          <%= link_to "Home", root_path %> 
-        </li>
-        <li>
-          <%= link_to "About", about_path %> 
-        </li>
-        <li>
-          <%= link_to "Log in", new_user_session_path %>
-        </li>
-        <li>
-          <%= link_to "Sign up", new_user_registration_path %>
-        </li>
-      <% end %>
+                  <a>
+                    <%= link_to "/users", class: "nav-link text-light" do %>
+                    <i class="fa-solid fa-users"></i>
+                      <span>Users</span>
+                    <% end %> 
+                  </a>
+
+                  <a>
+                    <%= link_to "/books", class: "nav-link text-light" do %>
+                      <i class="fa-solid fa-book-open"></i>
+                      <span>Books</span>
+                    <% end %> 
+                  </a>
+
+                  <a>
+                    <%= link_to destroy_user_session_path, method: :delete, class: "nav-link text-light" do %>
+                      <i class="fa-solid fa-sign-out-alt"></i>
+                      <span>Log out</span>
+                    <% end %> 
+                  </a>
+              
+                <% else %>
+                  <a>
+                    <%= link_to root_path, class: "nav-link text-light" do %>
+                      <span>Home</span>
+                    <% end %> 
+                  </a>
+
+                  <a>
+                    <%= link_to about_path, class: "nav-link text-light" do %>
+                      <span>About</span>
+                    <% end %> 
+                  </a>
+
+                  <a>
+                    <%= link_to new_user_session_path, class: "nav-link text-light" do %>
+                      <span>Log in</span>
+                    <% end %> 
+                  </a>
+
+                  <a>
+                    <%= link_to new_user_registration_path, class: "nav-link text-light" do %>
+                      <span>Sign up</span>
+                    <% end %> 
+                  </a>
+                <% end %>
+              </ul>
+            </div>
+        </div>
+      </nav>
     </header>
+
     <main>
       <% if flash[:notice] %>
         <p><%= flash[:notice] %></p>
@@ -54,7 +92,13 @@
     </main>
     
     <footer>
-      <p>CopyRight Infratop.inc</p>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="mx-auto">
+            <p>CopyRight Infratop.inc</p>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
