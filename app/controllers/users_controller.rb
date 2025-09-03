@@ -35,10 +35,11 @@ class UsersController < ApplicationController
   def edit
     user = User.find(params[:id])
     unless user.id == current_user.id
-    redirect_to user_path
-  end
-    @user = User.find(params[:id])
-    @book = Book.new
+      redirect_to user_path(current_user)
+    else
+      @user = User.find(params[:id])
+      @book = Book.new
+    end
   end
 
   def index
@@ -59,6 +60,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :body)
+    params.require(:user).permit(:name, :body, :introduction, :profile_image)
   end
 end

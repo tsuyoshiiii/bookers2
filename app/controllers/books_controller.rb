@@ -10,7 +10,9 @@ class BooksController < ApplicationController
       flash[:notice] = "You have created book successfully."
       redirect_to book_path(@book)
     else
-      render 'new'
+      @books = Book.all
+      @user = User.new
+      render 'index'
     end
   end
 
@@ -25,13 +27,17 @@ class BooksController < ApplicationController
     @books = Book.all
     @book = Book.new
     @user = User.new
+      unless @books.nil?
+      @books.each do |book|
+      end
+    end
   end
 
   def edit
     @book = Book.find(params[:id])
     user = @book.user
     unless user.id == current_user.id
-      redirect_to book_path
+      redirect_to books_path
     end
   end
 
