@@ -12,7 +12,7 @@ Bookモデルのテスト
     bodyカラム
 [32m      空欄でないこと[0m
 [32m      200文字以下であること: 200文字は〇[0m
-[31m      200文字以下であること: 201文字は× (FAILED - 1)[0m
+[32m      200文字以下であること: 201文字は×[0m
   アソシエーションのテスト
     Userモデルとの関係
 [32m      N:1となっている[0m
@@ -24,11 +24,11 @@ Userモデルのテスト
 [32m      2文字以上であること: 1文字は×[0m
 [32m      2文字以上であること: 2文字は〇[0m
 [32m      20文字以下であること: 20文字は〇[0m
-[31m      20文字以下であること: 21文字は× (FAILED - 2)[0m
-[31m      一意性があること (FAILED - 3)[0m
+[32m      20文字以下であること: 21文字は×[0m
+[32m      一意性があること[0m
     introductionカラム
 [32m      50文字以下であること: 50文字は〇[0m
-[31m      50文字以下であること: 51文字は× (FAILED - 4)[0m
+[32m      50文字以下であること: 51文字は×[0m
   アソシエーションのテスト
     Bookモデルとの関係
 [32m      1:Nとなっている[0m
@@ -37,26 +37,26 @@ Userモデルのテスト
   トップ画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
-[31m      Log inリンクが表示される: 青色のボタンの表示が「Log in」である (FAILED - 5)[0m
-[31m      Log inリンクの内容が正しい (FAILED - 6)[0m
-[31m      Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である (FAILED - 7)[0m
+[31m      Log inリンクが表示される: 青色のボタンの表示が「Log in」である (FAILED - 1)[0m
+[31m      Log inリンクの内容が正しい (FAILED - 2)[0m
+[31m      Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である (FAILED - 3)[0m
 [32m      Sign upリンクの内容が正しい[0m
   アバウト画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 8)[0m
+[31m      URLが正しい (FAILED - 4)[0m
   ヘッダーのテスト: ログインしていない場合
     表示内容の確認
-[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 9)[0m
-[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 10)[0m
-[31m      Aboutリンクが表示される: 左上から3番目のリンクが「About」である (FAILED - 11)[0m
-[31m      Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である (FAILED - 12)[0m
-[31m      Log inリンクが表示される: 左上から5番目のリンクが「Log in」である (FAILED - 13)[0m
+[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 5)[0m
+[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 6)[0m
+[31m      Aboutリンクが表示される: 左上から3番目のリンクが「About」である (FAILED - 7)[0m
+[31m      Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である (FAILED - 8)[0m
+[31m      Log inリンクが表示される: 左上から5番目のリンクが「Log in」である (FAILED - 9)[0m
     リンクの内容を確認
-[31m      Bookersを押すと、トップ画面に遷移する (FAILED - 14)[0m
+[31m      Bookersを押すと、トップ画面に遷移する (FAILED - 10)[0m
 [32m      Homeを押すと、トップ画面に遷移する[0m
-[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 15)[0m
-[31m      Sign upを押すと、新規登録画面に遷移する (FAILED - 16)[0m
-[31m      Log inを押すと、ログイン画面に遷移する (FAILED - 17)[0m
+[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 11)[0m
+[31m      Sign upを押すと、新規登録画面に遷移する (FAILED - 12)[0m
+[31m      Log inを押すと、ログイン画面に遷移する (FAILED - 13)[0m
   ユーザ新規登録のテスト
     表示内容の確認
 [32m      URLが正しい[0m
@@ -83,32 +83,32 @@ Userモデルのテスト
 [32m      ログインに失敗し、ログイン画面にリダイレクトされる[0m
   ヘッダーのテスト: ログインしている場合
     ヘッダーの表示を確認
-[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 18)[0m
-[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 19)[0m
-[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 20)[0m
-[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 21)[0m
-[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 22)[0m
+[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 14)[0m
+[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 15)[0m
+[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 16)[0m
+[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 17)[0m
+[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 18)[0m
   ユーザログアウトのテスト
     ログアウト機能のテスト
-[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 23)[0m
-[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 24)[0m
+[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 19)[0m
+[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 20)[0m
 
 [STEP2] ユーザログイン後のテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
-[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 25)[0m
-[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 26)[0m
-[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 27)[0m
+[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 21)[0m
+[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 22)[0m
+[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 23)[0m
   投稿一覧画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
-[31m      自分と他人の画像のリンク先が正しい (FAILED - 28)[0m
+[31m      自分と他人の画像のリンク先が正しい (FAILED - 24)[0m
 [32m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい[0m
 [32m      自分の投稿と他人の投稿のオピニオンが表示される[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 29)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 25)[0m
 [32m      自分のユーザ編集画面へのリンクが存在する[0m
-[31m      「New book」と表示される (FAILED - 30)[0m
+[31m      「New book」と表示される (FAILED - 26)[0m
 [32m      titleフォームが表示される[0m
 [32m      titleフォームに値が入っていない[0m
 [32m      bodyフォームが表示される[0m
@@ -116,7 +116,7 @@ Userモデルのテスト
 [32m      Create Bookボタンが表示される[0m
     投稿成功のテスト
 [32m      自分の新しい投稿が正しく保存される[0m
-[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 31)[0m
+[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 27)[0m
   自分の投稿詳細画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
@@ -127,9 +127,9 @@ Userモデルのテスト
 [32m      投稿の編集リンクが表示される[0m
 [32m      投稿の削除リンクが表示される[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 32)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 28)[0m
 [32m      自分のユーザ編集画面へのリンクが存在する[0m
-[31m      「New book」と表示される (FAILED - 33)[0m
+[31m      「New book」と表示される (FAILED - 29)[0m
 [32m      titleフォームが表示される[0m
 [32m      titleフォームに値が入っていない[0m
 [32m      bodyフォームが表示される[0m
@@ -150,8 +150,8 @@ Userモデルのテスト
 [32m      title編集フォームが表示される[0m
 [32m      body編集フォームが表示される[0m
 [32m      Update Bookボタンが表示される[0m
-[31m      Showリンクが表示される (FAILED - 34)[0m
-[31m      Backリンクが表示される (FAILED - 35)[0m
+[31m      Showリンクが表示される (FAILED - 30)[0m
+[31m      Backリンクが表示される (FAILED - 31)[0m
     編集成功のテスト
 [32m      titleが正しく更新される[0m
 [32m      bodyが正しく更新される[0m
@@ -161,11 +161,11 @@ Userモデルのテスト
 [32m      URLが正しい[0m
 [32m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する[0m
 [32m      自分と他人の名前がそれぞれ表示される[0m
-[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 36)[0m
+[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 32)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 37)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 33)[0m
 [32m      自分のユーザ編集画面へのリンクが存在する[0m
-[31m      「New book」と表示される (FAILED - 38)[0m
+[31m      「New book」と表示される (FAILED - 34)[0m
 [32m      titleフォームが表示される[0m
 [32m      titleフォームに値が入っていない[0m
 [32m      bodyフォームが表示される[0m
@@ -179,9 +179,9 @@ Userモデルのテスト
 [32m      投稿一覧に自分の投稿のbodyが表示される[0m
 [32m      他人の投稿は表示されない[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 39)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 35)[0m
 [32m      自分のユーザ編集画面へのリンクが存在する[0m
-[31m      「New book」と表示される (FAILED - 40)[0m
+[31m      「New book」と表示される (FAILED - 36)[0m
 [32m      titleフォームが表示される[0m
 [32m      titleフォームに値が入っていない[0m
 [32m      bodyフォームが表示される[0m
@@ -191,19 +191,19 @@ Userモデルのテスト
     表示の確認
 [32m      URLが正しい[0m
 [32m      名前編集フォームに自分の名前が表示される[0m
-[31m      画像編集フォームが表示される (FAILED - 41)[0m
-[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 42)[0m
+[31m      画像編集フォームが表示される (FAILED - 37)[0m
+[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 38)[0m
 [32m      Update Userボタンが表示される[0m
     更新成功のテスト
-[31m      nameが正しく更新される (FAILED - 43)[0m
-[31m      introductionが正しく更新される (FAILED - 44)[0m
-[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 45)[0m
+[31m      nameが正しく更新される (FAILED - 39)[0m
+[31m      introductionが正しく更新される (FAILED - 40)[0m
+[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 41)[0m
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
 [32m    ユーザ新規登録成功時[0m
 [32m    ユーザログイン成功時[0m
-[31m    ユーザログアウト成功時 (FAILED - 46)[0m
+[31m    ユーザログアウト成功時 (FAILED - 42)[0m
 [32m    ユーザのプロフィール情報更新成功時[0m
 [32m    投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
 [32m    投稿データの更新成功時[0m
@@ -218,9 +218,9 @@ Userモデルのテスト
 [32m      バリデーションエラーが表示される[0m
     投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする
 [32m      投稿が保存されない[0m
-[31m      投稿一覧画面を表示している (FAILED - 47)[0m
+[31m      投稿一覧画面を表示している (FAILED - 43)[0m
 [32m      新規投稿フォームの内容が正しい[0m
-[31m      バリデーションエラーが表示される (FAILED - 48)[0m
+[31m      バリデーションエラーが表示される (FAILED - 44)[0m
     投稿データの更新失敗: titleを空にする
 [32m      投稿が更新されない[0m
 [32m      投稿編集画面を表示しており、フォームの内容が正しい[0m
@@ -237,42 +237,42 @@ Userモデルのテスト
       表示内容の確認
 [32m        URLが正しい[0m
 [32m        「Book detail」と表示される[0m
-[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 49)[0m
+[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 45)[0m
 [32m        投稿のtitleが表示される[0m
 [32m        投稿のopinionが表示される[0m
 [32m        投稿の編集リンクが表示されない[0m
 [32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 50)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 51)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 52)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 53)[0m
+[31m        他人の名前と紹介文が表示される (FAILED - 46)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 47)[0m
+[31m        自分の名前と紹介文は表示されない (FAILED - 48)[0m
+[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 49)[0m
     他人の投稿編集画面
-[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 54)[0m
+[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 50)[0m
     他人のユーザ詳細画面のテスト
       表示の確認
 [32m        URLが正しい[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 55)[0m
+[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 51)[0m
 [32m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
 [32m        投稿一覧に他人の投稿のopinionが表示される[0m
 [32m        自分の投稿は表示されない[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 56)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 57)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 58)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 59)[0m
+[31m        他人の名前と紹介文が表示される (FAILED - 52)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 53)[0m
+[31m        自分の名前と紹介文は表示されない (FAILED - 54)[0m
+[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 55)[0m
     他人のユーザ情報編集画面
-[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 60)[0m
+[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 56)[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
 [32m    ユーザ一覧画面[0m
-[31m    ユーザ詳細画面 (FAILED - 61)[0m
+[31m    ユーザ詳細画面 (FAILED - 57)[0m
 [32m    投稿一覧画面[0m
 [32m    投稿詳細画面[0m
   アイコンのテスト
     トップ画面
 [32m      本のアイコンが表示される[0m
     アバウト画面
-[31m      本のアイコンが表示される (FAILED - 62)[0m
+[31m      本のアイコンが表示される (FAILED - 58)[0m
     ヘッダー: ログインしていない場合
 [32m      Homeリンクのアイコンが表示される[0m
 [32m      Aboutリンクのアイコンが表示される[0m
@@ -291,67 +291,7 @@ Userモデルのテスト
 
 Failures:
 
-  1) Bookモデルのテスト バリデーションのテスト bodyカラム 200文字以下であること: 201文字は×
-     [31mFailure/Error: is_expected.to eq false[0m
-     [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [31m[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
-     [31m  [0m[0m
-     [36m# ./spec/models/book_spec.rb:28:in `block (4 levels) in <main>'[0m
-
-  2) Userモデルのテスト バリデーションのテスト nameカラム 20文字以下であること: 21文字は×
-     [31mFailure/Error: is_expected.to eq false[0m
-     [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [31m[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
-     [31m  [0m[0m
-     [36m# ./spec/models/user_spec.rb:29:in `block (4 levels) in <main>'[0m
-
-  3) Userモデルのテスト バリデーションのテスト nameカラム 一意性があること
-     [31mFailure/Error: is_expected.to eq false[0m
-     [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [31m[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
-     [31m  [0m[0m
-     [36m# ./spec/models/user_spec.rb:33:in `block (4 levels) in <main>'[0m
-
-  4) Userモデルのテスト バリデーションのテスト introductionカラム 50文字以下であること: 51文字は×
-     [31mFailure/Error: is_expected.to eq false[0m
-     [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [31m[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
-     [31m  [0m[0m
-     [36m# ./spec/models/user_spec.rb:44:in `block (4 levels) in <main>'[0m
-
-  5) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である
+  1) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である
      [31mFailure/Error: expect(log_in_link).to match(/Log in/)[0m
      [31m[0m
      [31m  expected "About" to match /Log in/[0m
@@ -362,12 +302,12 @@ Failures:
      [31m  [0m[0m
      [36m# ./spec/system/01_before_login_spec.rb:15:in `block (4 levels) in <main>'[0m
 
-  6) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい
+  2) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい
      [31mFailure/Error: expect(page).to have_link log_in_link, href: new_user_session_path[0m
      [31m  expected to find link "About" with href "/users/sign_in" but there were no matches[0m
      [36m# ./spec/system/01_before_login_spec.rb:19:in `block (4 levels) in <main>'[0m
 
-  7) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である
+  3) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である
      [31mFailure/Error: expect(sign_up_link).to match(/Sign up/)[0m
      [31m[0m
      [31m  expected "" to match /Sign up/[0m
@@ -378,14 +318,14 @@ Failures:
      [31m  [0m[0m
      [36m# ./spec/system/01_before_login_spec.rb:23:in `block (4 levels) in <main>'[0m
 
-  8) [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい
+  4) [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい
      [31mFailure/Error: visit '/home/about'[0m
      [31m[0m
      [31mActionController::RoutingError:[0m
      [31m  No route matches [GET] "/home/about"[0m
      [36m# ./spec/system/01_before_login_spec.rb:34:in `block (3 levels) in <main>'[0m
 
-  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
+  5) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
      [31mFailure/Error: expect(home_link).to match(/Bookers/)[0m
      [31m[0m
      [31m  expected "" to match /Bookers/[0m
@@ -396,65 +336,65 @@ Failures:
      [31m  [0m[0m
      [36m# ./spec/system/01_before_login_spec.rb:52:in `block (4 levels) in <main>'[0m
 
-  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
-      [31mFailure/Error: expect(home_link).to match(/Home/)[0m
-      [31m[0m
-      [31m  expected "Bookers" to match /Home/[0m
-      [31m  Diff:[0m[0m
-      [31m  [0m[34m@@ -1 +1 @@[0m
-      [31m  [0m[31m-/Home/[0m
-      [31m  [0m[32m+"Bookers"[0m
-      [31m  [0m[0m
-      [36m# ./spec/system/01_before_login_spec.rb:56:in `block (4 levels) in <main>'[0m
+  6) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
+     [31mFailure/Error: expect(home_link).to match(/Home/)[0m
+     [31m[0m
+     [31m  expected "Bookers" to match /Home/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1 +1 @@[0m
+     [31m  [0m[31m-/Home/[0m
+     [31m  [0m[32m+"Bookers"[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:56:in `block (4 levels) in <main>'[0m
 
-  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Aboutリンクが表示される: 左上から3番目のリンクが「About」である
-      [31mFailure/Error: expect(about_link).to match(/About/)[0m
-      [31m[0m
-      [31m  expected "" to match /About/[0m
-      [31m  Diff:[0m[0m
-      [31m  [0m[34m@@ -1 +1 @@[0m
-      [31m  [0m[31m-/About/[0m
-      [31m  [0m[32m+""[0m
-      [31m  [0m[0m
-      [36m# ./spec/system/01_before_login_spec.rb:60:in `block (4 levels) in <main>'[0m
+  7) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Aboutリンクが表示される: 左上から3番目のリンクが「About」である
+     [31mFailure/Error: expect(about_link).to match(/About/)[0m
+     [31m[0m
+     [31m  expected "" to match /About/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1 +1 @@[0m
+     [31m  [0m[31m-/About/[0m
+     [31m  [0m[32m+""[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:60:in `block (4 levels) in <main>'[0m
 
-  12) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である
-      [31mFailure/Error: expect(signup_link).to match(/Sign up/)[0m
-      [31m[0m
-      [31m  expected "Home" to match /Sign up/[0m
-      [31m  Diff:[0m[0m
-      [31m  [0m[34m@@ -1 +1 @@[0m
-      [31m  [0m[31m-/Sign up/[0m
-      [31m  [0m[32m+"Home"[0m
-      [31m  [0m[0m
-      [36m# ./spec/system/01_before_login_spec.rb:64:in `block (4 levels) in <main>'[0m
+  8) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である
+     [31mFailure/Error: expect(signup_link).to match(/Sign up/)[0m
+     [31m[0m
+     [31m  expected "Home" to match /Sign up/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1 +1 @@[0m
+     [31m  [0m[31m-/Sign up/[0m
+     [31m  [0m[32m+"Home"[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:64:in `block (4 levels) in <main>'[0m
 
-  13) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Log inリンクが表示される: 左上から5番目のリンクが「Log in」である
-      [31mFailure/Error: expect(login_link).to match(/Log in/)[0m
-      [31m[0m
-      [31m  expected "" to match /Log in/[0m
-      [31m  Diff:[0m[0m
-      [31m  [0m[34m@@ -1 +1 @@[0m
-      [31m  [0m[31m-/Log in/[0m
-      [31m  [0m[32m+""[0m
-      [31m  [0m[0m
-      [36m# ./spec/system/01_before_login_spec.rb:68:in `block (4 levels) in <main>'[0m
+  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Log inリンクが表示される: 左上から5番目のリンクが「Log in」である
+     [31mFailure/Error: expect(login_link).to match(/Log in/)[0m
+     [31m[0m
+     [31m  expected "" to match /Log in/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1 +1 @@[0m
+     [31m  [0m[31m-/Log in/[0m
+     [31m  [0m[32m+""[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:68:in `block (4 levels) in <main>'[0m
 
-  14) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Bookersを押すと、トップ画面に遷移する
+  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Bookersを押すと、トップ画面に遷移する
       [31mFailure/Error: click_link home_link[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
       [31m  Ambiguous match, found 7 elements matching visible link ""[0m
       [36m# ./spec/system/01_before_login_spec.rb:79:in `block (4 levels) in <main>'[0m
 
-  15) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
+  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
       [31mFailure/Error: click_link about_link[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
       [31m  Ambiguous match, found 7 elements matching visible link ""[0m
       [36m# ./spec/system/01_before_login_spec.rb:92:in `block (4 levels) in <main>'[0m
 
-  16) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する
+  12) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する
       [31mFailure/Error: is_expected.to eq '/users/sign_up'[0m
       [31m[0m
       [31m  expected: "/users/sign_up"[0m
@@ -463,7 +403,7 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/01_before_login_spec.rb:99:in `block (4 levels) in <main>'[0m
 
-  17) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する
+  13) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する
       [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
       [31m[0m
       [31m  expected: "/users/sign_in"[0m
@@ -472,7 +412,7 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/01_before_login_spec.rb:105:in `block (4 levels) in <main>'[0m
 
-  18) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
+  14) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
       [31mFailure/Error: expect(home_link).to match(/Bookers/)[0m
       [31m[0m
       [31m  expected "" to match /Bookers/[0m
@@ -483,7 +423,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:223:in `block (4 levels) in <main>'[0m
 
-  19) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
+  15) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
       [31mFailure/Error: expect(home_link).to match(/Home/)[0m
       [31m[0m
       [31m  expected "Bookers" to match /Home/[0m
@@ -494,7 +434,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:227:in `block (4 levels) in <main>'[0m
 
-  20) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
+  16) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
       [31mFailure/Error: expect(users_link).to match(/Users/)[0m
       [31m[0m
       [31m  expected "" to match /Users/[0m
@@ -505,7 +445,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:231:in `block (4 levels) in <main>'[0m
 
-  21) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
+  17) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
       [31mFailure/Error: expect(books_link).to match(/Books/)[0m
       [31m[0m
       [31m  expected "Home" to match /Books/[0m
@@ -516,7 +456,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:235:in `block (4 levels) in <main>'[0m
 
-  22) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
+  18) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
       [31mFailure/Error: expect(logout_link).to match(/Log out/)[0m
       [31m[0m
       [31m  expected "" to match /Log out/[0m
@@ -527,12 +467,12 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:239:in `block (4 levels) in <main>'[0m
 
-  23) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
+  19) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: '/home/about'[0m
       [31m  expected to find link "" with href "/home/about" but there were no matches[0m
       [36m# ./spec/system/01_before_login_spec.rb:259:in `block (4 levels) in <main>'[0m
 
-  24) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
+  20) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
       [31mFailure/Error: expect(current_path).to eq '/'[0m
       [31m[0m
       [31m  expected: "/"[0m
@@ -541,7 +481,7 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/01_before_login_spec.rb:262:in `block (4 levels) in <main>'[0m
 
-  25) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
+  21) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
       [31mFailure/Error: is_expected.to eq '/users/' + user.id.to_s[0m
       [31m[0m
       [31m  expected: "/users/1"[0m
@@ -550,14 +490,14 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/02_after_login_spec.rb:24:in `block (4 levels) in <main>'[0m
 
-  26) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
+  22) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
       [31mFailure/Error: click_link users_link[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
       [31m  Ambiguous match, found 2 elements matching visible link ""[0m
       [36m# ./spec/system/02_after_login_spec.rb:29:in `block (4 levels) in <main>'[0m
 
-  27) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
+  23) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
       [31mFailure/Error: is_expected.to eq '/books'[0m
       [31m[0m
       [31m  expected: "/books"[0m
@@ -566,22 +506,22 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/02_after_login_spec.rb:36:in `block (4 levels) in <main>'[0m
 
-  28) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
+  24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link '', href: user_path(other_book.user)[0m
       [31m  expected to find link "" with href "/users/2" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:52:in `block (4 levels) in <main>'[0m
 
-  29) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  25) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.introduction[0m
-      [31m  expected to find text "j52c6uwn0isxd7vsqn40" in "Bookers\nHome Users Books Log out\nUser info\nname: zr9eeeux1c\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion ngd9x o0d6v1z8y5uvg78dfob1 mn7cn ye30vw5fw79q31nisfoj\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "eqld94sn2a27ty69jucx" in "Bookers\nHome Users Books Log out\nUser info\nname: xbu5f3by9s\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion dupkp 5ph4kh7cztuqj05aphb9 ueg5k 5sf3dc9m8uc0ljc2nbgr\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:67:in `block (4 levels) in <main>'[0m
 
-  30) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
+  26) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: ej5k66ocxy\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion 5wtvz ksmgjt7w75yfp6471dmu yqh79 8kepnkqcdby9kaolfd1s\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: r2hcvt0can\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion jxyfd ugmg2rda4vahvh3nfcn7 tik75 ek2s5vvs6y0fa6th7wnw\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:73:in `block (4 levels) in <main>'[0m
 
-  31) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
+  27) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
       [31mFailure/Error: expect(current_path).to eq '/books/' + Book.last.id.to_s[0m
       [31m[0m
       [31m  expected: "/books/3"[0m
@@ -590,125 +530,125 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/02_after_login_spec.rb:103:in `block (4 levels) in <main>'[0m
 
-  32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  28) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.introduction[0m
-      [31m  expected to find text "14kwg5n0usp6r6wzuuwm" in "Bookers\nHome Users Books Log out\nUser info\nname: gkbvmls9gg\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\ngkbvmls9gg\ncydz1 n6w7yoxdnewjdi7vk02b Edit Destroy\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "5mz2bjvh8c3urcbj9bxd" in "Bookers\nHome Users Books Log out\nUser info\nname: fujasx48l4\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\nfujasx48l4\nrx6k2 7hqn4f014up1e8vljq84 Edit Destroy\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:140:in `block (4 levels) in <main>'[0m
 
-  33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
+  29) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: hhmjg79r73\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\nhhmjg79r73\nl5cey 6lb9bmuebfwxs9lylsba Edit Destroy\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: nfnjzoboaz\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\nnfnjzoboaz\nwrvm6 6ihalqgbbjs0m2ebl5sh Edit Destroy\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
-  34) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
+  30) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
       [31mFailure/Error: expect(page).to have_link 'Show', href: book_path(book)[0m
       [31m  expected to find link "Show" with href "/books/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:234:in `block (4 levels) in <main>'[0m
 
-  35) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
+  31) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
       [31mFailure/Error: expect(page).to have_link 'Back', href: books_path[0m
       [31m  expected to find link "Back" with href "/books" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:237:in `block (4 levels) in <main>'[0m
 
-  36) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
+  32) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
       [31mFailure/Error: expect(page).to have_link 'Show', href: user_path(user)[0m
       [31m  expected to find link "Show" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:280:in `block (4 levels) in <main>'[0m
 
-  37) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  33) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.introduction[0m
-      [31m  expected to find text "03daqoob6msho1kwl2pg" in "Bookers\nHome Users Books Log out\nUser info\nname: p4n1ju35zw\nintroduction:\nNew Book\nTitle\nOpinion\nUsers\nimage name p4n1ju35zw show haohmhaqey show\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "fz8g6wiaqcat275l6ikr" in "Bookers\nHome Users Books Log out\nUser info\nname: fl779g7lqp\nintroduction:\nNew Book\nTitle\nOpinion\nUsers\nimage name fl779g7lqp show rjb5g68rz4 show\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:288:in `block (4 levels) in <main>'[0m
 
-  38) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
+  34) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: kfuikchj28\nintroduction:\nNew Book\nTitle\nOpinion\nUsers\nimage name kfuikchj28 show lsyn2bxhu5 show\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: jn7u6u3507\nintroduction:\nNew Book\nTitle\nOpinion\nUsers\nimage name jn7u6u3507 show 43thmcbnut show\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:294:in `block (4 levels) in <main>'[0m
 
-  39) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  35) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.introduction[0m
-      [31m  expected to find text "gv2tcj6mo6wnzpnr3qcl" in "Bookers\nHome Users Books Log out\nUser info\nname: 5fq65i1k0f\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion eh9q5 iuhcrexjstzkkv133ukf\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "qdv7c32xc38brm43rfgx" in "Bookers\nHome Users Books Log out\nUser info\nname: 71gvmuw635\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion ulez3 lsv3kakenmrk0acl0w7x\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:342:in `block (4 levels) in <main>'[0m
 
-  40) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
+  36) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: fl5vk7l7ea\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion iaxpp u408mxrgsg07oumc7ov8\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname: i125eod8q0\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion ercpu 9trgctxnatxflguuzjmn\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:348:in `block (4 levels) in <main>'[0m
 
-  41) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
+  37) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
       [31mFailure/Error: expect(page).to have_field 'user[profile_image]'[0m
       [31m  expected to find field "user[profile_image]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:381:in `block (4 levels) in <main>'[0m
 
-  42) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
+  38) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
       [31mFailure/Error: expect(page).to have_field 'user[introduction]', with: user.introduction[0m
       [31m  expected to find field "user[introduction]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:384:in `block (4 levels) in <main>'[0m
 
-  43) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
+  39) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
       [31mFailure/Error: fill_in 'user[introduction]', with: Faker::Lorem.characters(number: 19)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
       [31m  Unable to find field "user[introduction]" that is not disabled[0m
       [36m# ./spec/system/02_after_login_spec.rb:396:in `block (4 levels) in <main>'[0m
 
-  44) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
+  40) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
       [31mFailure/Error: fill_in 'user[introduction]', with: Faker::Lorem.characters(number: 19)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
       [31m  Unable to find field "user[introduction]" that is not disabled[0m
       [36m# ./spec/system/02_after_login_spec.rb:396:in `block (4 levels) in <main>'[0m
 
-  45) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
+  41) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
       [31mFailure/Error: fill_in 'user[introduction]', with: Faker::Lorem.characters(number: 19)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
       [31m  Unable to find field "user[introduction]" that is not disabled[0m
       [36m# ./spec/system/02_after_login_spec.rb:396:in `block (4 levels) in <main>'[0m
 
-  46) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
+  42) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
       [31mFailure/Error: click_link logout_link[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
       [31m  Ambiguous match, found 2 elements matching visible link ""[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:35:in `block (3 levels) in <main>'[0m
 
-  47) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
+  43) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
       [31mFailure/Error: expect(page).to have_content book.body[0m
-      [31m  expected to find text "o40byj1823bhk6p1ayex" in "Bookers\nHome Users Books Log out\nNew Book\nTitle\nOpinion\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "wxpndsysunr4g8kcgdek" in "Bookers\nHome Users Books Log out\nNew Book\nTitle\nOpinion\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:137:in `block (4 levels) in <main>'[0m
 
-  48) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
+  44) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
       [31mFailure/Error: expect(page).to have_content "can't be blank"[0m
       [31m  expected to find text "can't be blank" in "Bookers\nHome Users Books Log out\nNew Book\nTitle\nOpinion\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:146:in `block (4 levels) in <main>'[0m
 
-  49) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  45) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link other_book.user.name, href: user_path(other_book.user)[0m
-      [31m  expected to find link "wh7bf61t0z" with href "/users/2" but there were no matches[0m
+      [31m  expected to find link "j5n0n5icil" with href "/users/2" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:226:in `block (5 levels) in <main>'[0m
 
-  50) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
+  46) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.introduction[0m
-      [31m  expected to find text "vh898x1zcbxwh0vzke0s" in "Bookers\nHome Users Books Log out\nUser info\nname: 9a3bksmj0w\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\n3etz69jxhw\ncn4ey wze7lsowykvh4v38zeoj\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "ft3gxtr3vh8oo8an0f12" in "Bookers\nHome Users Books Log out\nUser info\nname: 1j02jhqp4l\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\ngxlsmsy1vj\n4e22y lqhw279xjbgh4gsf17al\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:245:in `block (5 levels) in <main>'[0m
 
-  51) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+  47) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
 
-  52) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
+  48) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
       [31mFailure/Error: expect(page).not_to have_content user.name[0m
-      [31m  expected not to find text "gpkbh3neqc" in "Bookers\nHome Users Books Log out\nUser info\nname: gpkbh3neqc\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\nzgm81tzoux\n9yevi 5ebv9hgr1xaj2alo42l9\nCopyRight Infratop.inc"[0m
+      [31m  expected not to find text "7q44s72fi7" in "Bookers\nHome Users Books Log out\nUser info\nname: 7q44s72fi7\nintroduction:\nNew Book\nTitle\nOpinion\nBook detail\n4acynew9yq\nesncx pfvisccgtiglt6lk6w12\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:251:in `block (5 levels) in <main>'[0m
 
-  53) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
+  49) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
       [31mFailure/Error: expect(page).not_to have_link '', href: edit_user_path(user)[0m
       [31m  expected not to find visible link "" with href "/users/1/edit", found 1 match: ""[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:255:in `block (5 levels) in <main>'[0m
 
-  54) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
+  50) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
       [31mFailure/Error: expect(current_path).to eq '/books'[0m
       [31m[0m
       [31m  expected: "/books"[0m
@@ -717,32 +657,32 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:269:in `block (4 levels) in <main>'[0m
 
-  55) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  51) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link '', href: user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/2" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:283:in `block (5 levels) in <main>'[0m
 
-  56) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
+  52) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.name[0m
-      [31m  expected to find text "jdavhgai98" in "Bookers\nHome Users Books Log out\nUser info\nname: 3td2npc0p1\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion otb82 9yyyeblxj9iq6fm68ivp\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "9yzetsadhz" in "Bookers\nHome Users Books Log out\nUser info\nname: eadrhvwfib\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion 8990c o7tjhdcf794vpm3iyxj9\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:299:in `block (5 levels) in <main>'[0m
 
-  57) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+  53) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:303:in `block (5 levels) in <main>'[0m
 
-  58) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
+  54) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
       [31mFailure/Error: expect(page).not_to have_content user.name[0m
-      [31m  expected not to find text "c4jtbox9s4" in "Bookers\nHome Users Books Log out\nUser info\nname: c4jtbox9s4\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion hv5li 12yvqdlx3d2ybezmx02g\nCopyRight Infratop.inc"[0m
+      [31m  expected not to find text "yhv79bqprs" in "Bookers\nHome Users Books Log out\nUser info\nname: yhv79bqprs\nintroduction:\nNew Book\nTitle\nOpinion\nBooks\nTitle Opinion b2lcb 5twyv4shtfjh2wvux60f\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:306:in `block (5 levels) in <main>'[0m
 
-  59) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
+  55) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
       [31mFailure/Error: expect(page).not_to have_link '', href: edit_user_path(user)[0m
       [31m  expected not to find visible link "" with href "/users/1/edit", found 1 match: ""[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:310:in `block (5 levels) in <main>'[0m
 
-  60) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
+  56) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
       [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
       [31m[0m
       [31m  expected: "/users/1"[0m
@@ -751,27 +691,23 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:318:in `block (4 levels) in <main>'[0m
 
-  61) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
+  57) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
       [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
       [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:340:in `block (3 levels) in <main>'[0m
 
-  62) [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される
+  58) [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される
       [31mFailure/Error: visit '/home/about'[0m
       [31m[0m
       [31mActionController::RoutingError:[0m
       [31m  No route matches [GET] "/home/about"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:372:in `block (4 levels) in <main>'[0m
 
-Finished in 42.41 seconds (files took 2.92 seconds to load)
-[31m201 examples, 62 failures[0m
+Finished in 29.74 seconds (files took 1.35 seconds to load)
+[31m201 examples, 58 failures[0m
 
 Failed examples:
 
-[31mrspec ./spec/models/book_spec.rb:26[0m [36m# Bookモデルのテスト バリデーションのテスト bodyカラム 200文字以下であること: 201文字は×[0m
-[31mrspec ./spec/models/user_spec.rb:27[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 20文字以下であること: 21文字は×[0m
-[31mrspec ./spec/models/user_spec.rb:31[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 一意性があること[0m
-[31mrspec ./spec/models/user_spec.rb:42[0m [36m# Userモデルのテスト バリデーションのテスト introductionカラム 50文字以下であること: 51文字は×[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:13[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:17[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:21[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である[0m
