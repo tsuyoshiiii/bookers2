@@ -11,7 +11,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book)
     else
       @books = Book.all
-      @user = User.new
+      @user = current_user
       render 'index'
     end
   end
