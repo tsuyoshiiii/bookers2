@@ -26,11 +26,7 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
     @book = Book.new
-    @user = User.new
-      unless @books.nil?
-      @books.each do |book|
-      end
-    end
+    @user = current_user
   end
 
   def edit

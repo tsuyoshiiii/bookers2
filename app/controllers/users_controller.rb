@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:notice] = "Signed in successfully."
-      redirect_to user_path
+      redirect_to user_path(@user)
     else
       render :new
     end
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    @user = User.new
+    @user = current_user
   end
 
   def update
@@ -59,7 +59,9 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit(:name, :body, :introduction, :profile_image)
   end
+
 end

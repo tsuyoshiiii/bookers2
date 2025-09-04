@@ -7,13 +7,21 @@
       <div class="col-md-8 offset-md-1">
         <h2>Book detail</h2>
           <table class="table">
+            <thead>
+              <tr>
+                <th> </th>
+                <th>Title</th>
+                <th>Opinion</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td>
                   <%= link_to user_path(current_user) do %>
                     <%= image_tag @book.user.get_profile_image(100,100) %>
                   <% end %>
-                  <div><%= link_to user.name, user_path(current_user) %></div>
+                  <div><%= link_to user.name, user_path(@user) %></div>
                 </td>
                 <td>
                   <%= link_to book.title, book_path(book.id) %>

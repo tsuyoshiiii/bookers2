@@ -1,6 +1,6 @@
 <h2>User info</h2>
-<% if @user && @user.profile_image.present? %>
-    <%= image_tag url_for(@user.profile_image), size: "100x100" %>
+<% if user.profile_image.present? %>
+    <%= image_tag url_for(user.profile_image), size: "100x100" %>
   <% else %>
     <%= image_tag 'default-image', size: "100x100" %>
   <% end %>
@@ -9,17 +9,15 @@
   <tbody>
     <tr>
       <td>
-        <% if @user %>
-          <div>name: <%= @user.name %></div>
-          <div>introduction: <%= @user.introduction %></div>
-        <% end %>
+        <div>name: <%= user.name %></div>
+        <div>introduction: <%= user.introduction %></div>
       </td>
     </tr>
   </tbody>
 </table> 
 
 <div class="row">
-  <%= link_to edit_user_path(current_user), class: "btn btn-outline-secondary btn-block current_user" do %>
+  <%= link_to edit_user_path(user), class: "btn btn-outline-secondary btn-block current_user" do %>
   <i class="fas fa-user-cog mr-2"></i>
 <% end %>
 </div>
